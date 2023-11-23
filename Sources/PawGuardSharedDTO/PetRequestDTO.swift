@@ -8,14 +8,14 @@
 import Foundation
 
 public struct PetRequestDTO: Codable {
-    let name: String
-    let species: String
-    let breed: String
-    let sex: String
-    let dateOfBirth: Date
-    let color: String
-    let microchipNumber: String
-    let microchipLocation: String
+    public let name: String
+    public let species: String
+    public let breed: String
+    public let sex: String
+    public let dateOfBirth: Date
+    public let color: String
+    public let microchipNumber: String
+    public let microchipLocation: String
     
     public init(name: String, species: String, breed: String, sex: String, dateOfBirth: Date, color: String, microchipNumber: String, microchipLocation: String) {
         self.name = name
