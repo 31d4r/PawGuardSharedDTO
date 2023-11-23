@@ -12,12 +12,12 @@ public struct PetRequestDTO: Codable {
     public let species: String
     public let breed: String
     public let sex: String
-    public let dateOfBirth: Date
+    public let dateOfBirth: String
     public let color: String
     public let microchipNumber: String
     public let microchipLocation: String
     
-    public init(name: String, species: String, breed: String, sex: String, dateOfBirth: Date, color: String, microchipNumber: String, microchipLocation: String) {
+    public init(name: String, species: String, breed: String, sex: String, dateOfBirth: String, color: String, microchipNumber: String, microchipLocation: String) {
         self.name = name
         self.species = species
         self.breed = breed
