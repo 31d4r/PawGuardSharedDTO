@@ -8,6 +8,7 @@
 import Foundation
 
 struct PetResponseDTO: Codable {
+    public let id: UUID
     public let name: String
     public let species: String
     public let breed: String
@@ -17,7 +18,8 @@ struct PetResponseDTO: Codable {
     public let microchipNumber: String
     public let microchipLocation: String
     
-    public init(name: String, species: String, breed: String, sex: String, dateOfBirth: Date, color: String, microchipNumber: String, microchipLocation: String) {
+    public init(id: UUID, name: String, species: String, breed: String, sex: String, dateOfBirth: Date, color: String, microchipNumber: String, microchipLocation: String) {
+        self.id = id
         self.name = name
         self.species = species
         self.breed = breed
