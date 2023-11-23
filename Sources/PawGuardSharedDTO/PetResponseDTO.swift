@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct PetResponseDTO: Codable {
+public struct PetResponseDTO: Codable {
     public let id: UUID
     public let name: String
     public let species: String
