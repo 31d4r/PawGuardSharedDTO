@@ -15,8 +15,9 @@ public struct PetRequestDTO: Codable {
     public let color: String
     public let microchipNumber: String
     public let microchipLocation: String
+    public let imageUrl: String
     
-    public init(name: String, species: String, sex: String, dateOfBirth: String, color: String, microchipNumber: String, microchipLocation: String) {
+    public init(name: String, species: String, sex: String, dateOfBirth: String, color: String, microchipNumber: String, microchipLocation: String, imageUrl: String) {
         self.name = name
         self.species = species
         self.sex = sex
@@ -24,5 +25,6 @@ public struct PetRequestDTO: Codable {
         self.color = color
         self.microchipNumber = microchipNumber
         self.microchipLocation = microchipLocation
+        self.imageUrl = imageUrl
     }
 }
