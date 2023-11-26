@@ -8,10 +8,14 @@
 import Foundation
 
 public struct PasswordChangeDTO: Codable {
-    public  let oldPassword: String
+    public let error: Bool
+    public var reason: String? = nil
+    public let oldPassword: String
     public let newPassword: String
     
-    public init(oldPassword: String, newPassword: String) {
+    public init(error: Bool, reason: String? = nil, oldPassword: String, newPassword: String) {
+        self.error = error
+        self.reason = reason
         self.oldPassword = oldPassword
         self.newPassword = newPassword
     }
