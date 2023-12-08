@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct MedicalRecordRequestDTO: Codable {
+public struct PetMedicalRecordRequestDTO: Codable {
     public let title: String
     public let dateOfVisit: String
     public let veterinarianName: String
