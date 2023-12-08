@@ -16,6 +16,7 @@ public struct PetMedicalRecordResponseDTO: Codable {
     public let diagnosis: String
     public let cost: Double
     public let prescribedMedication: String
+    public let notes: String
     public let medicalRecordFiles: [String]
     public let hasReminder: Bool
     public let reminderDate: String
@@ -28,6 +29,7 @@ public struct PetMedicalRecordResponseDTO: Codable {
                 diagnosis: String,
                 cost: Double,
                 prescribedMedication: String,
+                notes: String,
                 medicalRecordFiles: [String],
                 hasReminder: Bool,
                 reminderDate: String
@@ -40,6 +42,7 @@ public struct PetMedicalRecordResponseDTO: Codable {
         self.diagnosis = diagnosis
         self.cost = cost
         self.prescribedMedication = prescribedMedication
+        self.notes = notes
         self.medicalRecordFiles = medicalRecordFiles
         self.hasReminder = hasReminder
         self.reminderDate = reminderDate
