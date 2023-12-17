@@ -13,14 +13,14 @@ public struct PetResponseDTO: Codable {
     public let species: String
     public let petBreed: String
     public let sex: String
-    public let dateOfBirth: String
+    public let dateOfBirth: Date
     public let color: String
     public let castratedSterilized: String
     public let microchipNumber: String
     public let microchipLocation: String
     public let imageURL: String
 
-    public init(id: UUID, name: String, species: String, petBreed: String, sex: String, dateOfBirth: String, color: String, castratedSterilized: String, microchipNumber: String, microchipLocation: String, imageURL: String) {
+    public init(id: UUID, name: String, species: String, petBreed: String, sex: String, dateOfBirth: Date, color: String, castratedSterilized: String, microchipNumber: String, microchipLocation: String, imageURL: String) {
         self.id = id
         self.name = name
         self.species = species
