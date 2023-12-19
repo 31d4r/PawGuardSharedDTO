@@ -18,7 +18,7 @@ public struct PetMedicalRecordRequestDTO: Codable {
     public let notes: String
     public let medicalRecordFiles: [String]
     public let hasReminder: Bool
-    public let reminderDate: String
+    public let reminderDate: Date
     
     public init(title: String,
                 dateOfVisit: String,
@@ -30,7 +30,7 @@ public struct PetMedicalRecordRequestDTO: Codable {
                 notes: String,
                 medicalRecordFiles: [String],
                 hasReminder: Bool,
-                reminderDate: String
+                reminderDate: Date
                 ) {
         self.title = title
         self.dateOfVisit = dateOfVisit
