@@ -12,11 +12,15 @@ public struct PetVaccineRequestDTO: Codable {
     public let vaccineAgainst: String
     public let vaccineValidFrom: Date
     public let vaccineValidTo: Date
+    public let vaccineHasReminder: Bool
+    public let vaccineReminderDate: Date
     
-    public init(vaccineName: String, vaccineAgainst: String, vaccineValidFrom: Date, vaccineValidTo: Date) {
+    public init(vaccineName: String, vaccineAgainst: String, vaccineValidFrom: Date, vaccineValidTo: Date, vaccineHasReminder: Bool, vaccineReminderDate: Date) {
         self.vaccineName = vaccineName
         self.vaccineAgainst = vaccineAgainst
         self.vaccineValidFrom = vaccineValidFrom
         self.vaccineValidTo = vaccineValidTo
+        self.vaccineHasReminder = vaccineHasReminder
+        self.vaccineReminderDate = vaccineReminderDate
     }
 }
