@@ -9,7 +9,7 @@ import Foundation
 
 public struct PetMedicalRecordRequestDTO: Codable {
     public let title: String
-    public let dateOfVisit: String
+    public let dateOfVisit: Date
     public let veterinarianName: String
     public let reasonForVisit: String
     public let diagnosis: String
@@ -21,7 +21,7 @@ public struct PetMedicalRecordRequestDTO: Codable {
     public let reminderDate: Date
     
     public init(title: String,
-                dateOfVisit: String,
+                dateOfVisit: Date,
                 veterinarianName: String,
                 reasonForVisit: String,
                 diagnosis: String,
