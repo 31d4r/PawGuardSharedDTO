@@ -11,10 +11,10 @@ public struct PetVaccineResponseDTO: Codable {
     public let id: UUID
     public let vaccineName: String
     public let vaccineAgainst: String
-    public let vaccineValidFrom: String
-    public let vaccineValidTo: String
+    public let vaccineValidFrom: Date
+    public let vaccineValidTo: Date
     
-    public init(id: UUID, vaccineName: String, vaccineAgainst: String, vaccineValidFrom: String, vaccineValidTo: String) {
+    public init(id: UUID, vaccineName: String, vaccineAgainst: String, vaccineValidFrom: Date, vaccineValidTo: Date) {
         self.id = id
         self.vaccineName = vaccineName
         self.vaccineAgainst = vaccineAgainst
