@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ChangeLogResponseDTO: Codable {
+public struct ChangeLogResponseDTO: Codable {
     let id: UUID
     let titleText: String
     let descriptionText: String
