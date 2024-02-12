@@ -8,13 +8,11 @@
 import Foundation
 
 public struct PetWalkTrackerRequestDTO: Codable {
-    public let petWalkId: Int
     public let petWalkSteps: Int
     public let petWalkStartTime: Date
     public let petWalkDuration: Double
     
-    public init(petWalkId: Int, petWalkSteps: Int, petWalkStartTime: Date, petWalkDuration: Double) {
-        self.petWalkId = petWalkId
+    public init(petWalkSteps: Int, petWalkStartTime: Date, petWalkDuration: Double) {
         self.petWalkSteps = petWalkSteps
         self.petWalkStartTime = petWalkStartTime
         self.petWalkDuration = petWalkDuration
