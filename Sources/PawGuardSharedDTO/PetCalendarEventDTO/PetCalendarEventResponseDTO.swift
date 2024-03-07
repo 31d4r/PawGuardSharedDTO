@@ -13,14 +13,12 @@ public struct PetCalendarEventResponseDTO: Codable {
     public let eventStartDate: Date
     public let eventEndDate: Date
     public let eventRecurrence: Int
-    public let eventCareNoteID: UUID
     
-    public init(id: UUID, eventTitle: String, eventStartDate: Date, eventEndDate: Date, eventRecurrence: Int, eventCareNoteID: UUID) {
+    public init(id: UUID, eventTitle: String, eventStartDate: Date, eventEndDate: Date, eventRecurrence: Int) {
         self.id = id
         self.eventTitle = eventTitle
         self.eventStartDate = eventStartDate
         self.eventEndDate = eventEndDate
         self.eventRecurrence = eventRecurrence
-        self.eventCareNoteID = eventCareNoteID
     }
 }
