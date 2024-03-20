@@ -11,11 +11,11 @@ public struct PetFeedingPlanResponseDTO: Codable {
     public let id: UUID
     public let title: String
     public let selectedStartDate: Date
-    public let repeatCycle: String
+    public let repeatCycle: Int
     public let selectedEndDate: Date
     public let portionSize: String
     
-    public init(id: UUID, title: String, selectedStartDate: Date, repeatCycle: String, selectedEndDate: Date, portionSize: String) {
+    public init(id: UUID, title: String, selectedStartDate: Date, repeatCycle: Int, selectedEndDate: Date, portionSize: String) {
         self.id = id
         self.title = title
         self.selectedStartDate = selectedStartDate
