@@ -15,8 +15,9 @@ public struct PetCalendarEventResponseDTO: Codable {
     public let eventRecurrence: Int
     public let eventType: Int
     public let petName: String
+    public let petId: UUID
     
-    public init(id: UUID, eventTitle: String, eventStartDate: Date, eventEndDate: Date, eventRecurrence: Int, eventType: Int, petName: String) {
+    public init(id: UUID, eventTitle: String, eventStartDate: Date, eventEndDate: Date, eventRecurrence: Int, eventType: Int, petName: String, petId: UUID) {
         self.id = id
         self.eventTitle = eventTitle
         self.eventStartDate = eventStartDate
@@ -24,5 +25,6 @@ public struct PetCalendarEventResponseDTO: Codable {
         self.eventRecurrence = eventRecurrence
         self.eventType = eventType
         self.petName = petName
+        self.petId = petId
     }
 }
