@@ -10,11 +10,11 @@ import Foundation
 public struct PetTherapyPlanRequestDTO: Codable {
     public let title: String
     public let selectedStartDate: Date
-    public let repeatCycle: String
+    public let repeatCycle: Int
     public let selectedEndDate: Date
     public let dosage: String
     
-    public init(title: String, selectedStartDate: Date, repeatCycle: String, selectedEndDate: Date, dosage: String) {
+    public init(title: String, selectedStartDate: Date, repeatCycle: Int, selectedEndDate: Date, dosage: String) {
         self.title = title
         self.selectedStartDate = selectedStartDate
         self.repeatCycle = repeatCycle
